@@ -1,0 +1,106 @@
+/*Line 2 - 19: Task 1*/
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #000000;
+    --background-color: #f5f5f5;
+    --text-color: #333333;
+    --font-weight: 400;
+    --primary-font: 'sans-serif';
+    --secondary-font: 'bold sans-serif';
+    --margin: 10px;
+    --text-decoration: none;
+    --active-color: #2980b9;
+    --display: inline-block;
+    --border: 10px;
+    --border-radius: 5px;
+    --article-bg-color: #c4c1c1;
+    --article-padding: 20px;
+    --width: 80%;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--primary-font);
+    margin: var(--margin);
+}
+/*Line 28 - 45: Task 2*/
+a, button{
+    color: var(--primary-color);
+    text-decoration: var(--text-decoration);
+    transition: 0.4s;
+}
+
+button:hover, a:hover {
+    background-color: var(--secondary-color);
+}
+
+button:active {
+    background-color: var(--active-color);
+    color: var(--text-color);
+}
+
+input:focus, button:focus {
+    outline: solid var(--primary-color);
+}
+
+/*Line 48 - 72: Task 3*/
+article {
+    display: var(--display);
+    background-color: var(--article-bg-color);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: var(--article-padding);
+}
+
+article:nth-child(odd) {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+article:nth-child(even) {
+    background-color: var(--secondary-color);
+    color: var(--background-color);
+}
+
+/*Line 67 - 73: Task 4*/
+form input:required {
+    border: var(--primary-color);
+}
+
+form input:invalid {
+    border: var(--secondary-color);
+}
+
+/*Line 75 - 96: Task 5*/
+table tr:first-child {
+    background-color: var(--primary-color);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--article-bg-color);
+}
+
+.section dl::marker {
+    color: var(--primary-color);
+}
+
+blockquote p::before {
+    content: "“";
+    color: var(--primary-color);
+}
+
+blockquote p::after {
+    content: "”";
+    color: var(--secondary-color);
+}  
+
+/*Line 99 - 106: Task 4*/
+section div:empty {
+    content: "Empty?";
+    background-color: var(--primary-color);
+}
+
+section div::before {
+    content: "$";
+}
