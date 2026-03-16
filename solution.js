@@ -1,3 +1,4 @@
+// Problem 4
 function getTopScorers(playerList) {
     return playerList
         .slice(0, 10)
